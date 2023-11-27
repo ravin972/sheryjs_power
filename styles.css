@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+*::selection {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-size: 16px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 10rem;
+    background: rgba(0, 0, 0, 0.05);
+    color: #000;
+}
+
+.navleft h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Nosifer', sans-serif;
+    letter-spacing: -.15rem;
+}
+
+.navright a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.navright a:hover {
+    text-decoration: underline;
+}
+
+.paragraph {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    flex-wrap: wrap;
+}
+
+.paragraph p {
+    color: #000;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 100;
+    letter-spacing: -.03rem;
+    line-height: 1.2;
+}
+
+.paragraph p span {
+    font-family: 'Nosifer', sans-serif;
+    font-size: 2.5rem;
+    color: transparent;
+    letter-spacing: -.08rem;
+    -webkit-text-stroke: .04rem #000;
+    transition: all ease-in-out .2s;
+}
+
+.paragraph p span:hover {
+    color: #000
+}
+
+.circle {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    width: 6rem;
+    height: 6rem;
+    background-color: transparent;
+    border: .03rem solid #131313;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.circle i {
+    font-size: 1.5rem;
+    color: #000;
+    transition: transform 0.3s ease;
+}
+
+.circle:hover {
+    transform: scale(1.2);
+}
+
+.circle:not(:hover) i {
+    animation: bounce 2s infinite;
+    transition: all ease-in-out .3s linear;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-0.4rem);
+    }
+
+    60% {
+        transform: translateY(0.4rem);
+    }
+}
+
+.secondPage {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 5rem;
+    justify-content: center;
+    width: 100%;
+    background-color: #d8d8d8;
+    padding: 2rem 10rem;
+}
+
+.secondPage .secleft {
+    padding: 1rem;
+}
+
+.secondPage .secleft h1:nth-child(1) {
+    font-size: 4rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+.secondPage .secleft h1:nth-child(2) {
+    font-size: 5rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    line-height: 1;
+    letter-spacing: -.1rem;
+}
+
+.secondPage .secright {
+    padding: 1rem;
+}
+
+.secondPage .secright p {
+    font-size: 2rem;
+    line-height: 1.2;
+    letter-spacing: -.03rem;
+    width: 100%;
+}
+
+.secondPage .secright p a {
+    text-decoration: none;
+    color: rgb(19, 63, 207);
+}
+
+.secondPage .secright p a:hover {
+    -webkit-text-stroke: .5px #131313;
+}
+
+.thirdPage {
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    text-align: center;
+}
+
+.thirdPage .heading {
+    margin-bottom: 2rem;
+}
+
+.thirdPage .heading h1 {
+    font-size: 2.5rem;
+    color: #f5f5f7;
+}
+
+.thirdPage .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.thirdPage .card {
+    position: relative;
+    width: 80%;
+    max-width: 300px;
+    height: 40vh;
+    margin: 1rem;
+    overflow: hidden;
+    transition: all ease 0.3s;
+}
+
+.thirdPage .card h3 {
+    font-size: 1.2rem;
+    display: flex;
+    text-align: center;
+    color: #afaaaa;
+    margin: 0.5rem;
+    position: absolute;
+    bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.thirdPage .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thirdPage .card .box {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(transparent, #000000);
+    bottom: -40%;
+    transition: all ease-in-out .3s;
+}
+
+.thirdPage .card:hover {
+    border-radius: 0.5rem;
+}
+
+.thirdPage .card:hover .box {
+    bottom: 0;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #d8d8d8; */
+}
+
+.footer video {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    object-fit: cover;
+}
+
+.footer .footer-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer-text h1 {
+    mix-blend-mode: difference;
+    font-size: 6rem;
+    font-family: 'Nosifer', sans-serif;
+    letter-spacing: -0.5rem;
+    color: #333;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.footer-text button {
+    font-size: 1rem;
+    letter-spacing: -.03rem;
+    border: .1px solid #000;
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+}
+
+.footer button:hover {
+    background-color: #000;
+    color: #f5f5f7;
+    mix-blend-mode: difference;
+}
+
+.divider {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #000;
+}
+
+.footer-bottom {
+    background-color: #fff;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.footer-bottom p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.footer-bottom p a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .navright {
+        display: none;
+    }
+
+    .paragraph {
+        width: 90%;
+    }
+
+    .circle {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .circle i {
+        font-size: 1.2rem;
+    }
+
+    .secondPage {
+        padding: 2rem;
+    }
+
+    .secondPage .secleft,
+    .secondPage .secright {
+        padding: 1rem;
+    }
+
+    .thirdPage .cards {
+        flex-direction: column;
+    }
+
+    .thirdPage .card {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .footer-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .footer-text button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #nav {
+        padding: 1rem;
+    }
+
+    .navleft h1 {
+        font-size: 1.2rem;
+    }
+
+    .paragraph p {
+        font-size: 0.9rem;
+    }
+
+    .paragraph p span {
+        font-size: 1rem;
+    }
+
+    .circle {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .circle i {
+        font-size: 1rem;
+    }
+
+    .secondPage {
+        padding: 1rem;
+    }
+
+    .secondPage .secleft,
+    .secondPage .secright {
+        padding: 0.5rem;
+    }
+
+    .secondPage .secleft h1:nth-child(1) {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .secondPage .secleft h1:nth-child(2) {
+        font-size: 2.5rem;
+        padding: 0.5rem;
+    }
+
+    .secondPage .secright p {
+        font-size: 1rem;
+    }
+
+    .thirdPage .heading h1 {
+        font-size: 2rem;
+    }
+
+    .thirdPage .card h3 {
+        font-size: 0.8rem;
+        margin: 0.3rem;
+    }
+
+    .thirdPage .footer-text h1 {
+        font-size: 3rem;
+        letter-spacing: -0.3rem;
+    }
+
+    .footer-text button {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.8rem;
+        margin-top: 0.5rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+}

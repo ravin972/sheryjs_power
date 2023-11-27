@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jkanime</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="hero">
+            <div class="background-image">
+                <img src="/images/satoruGojoHero.png" alt="Hero-Image">
+            </div>
+            <div id="nav">
+                <div class="navleft">
+                    <h1 class="magnet-target">jkAnime</h1>
+                </div>
+                <div class="navright">
+                    <a id="route" class="magnet-target" href="#home">Home</a>
+                    <a id="route" class="magnet-target" href="#about">About</a>
+                    <a id="route" class="magnet-target" href="#characters">Characters</a>
+                    <a id="route" class="magnet-target" href="#details">Details</a>
+                </div>
+            </div>
+            <div class="paragraph">
+                <p><span class="magnet-target">Jujutsu Kaisen</span> (呪術廻戦, "Sorcery Fight") is a Japanese manga series
+                    written and illustrated by Gege
+                    Akutami. It has been serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump since March
+                    2018, with its chapters collected and published in 24 tankōbon volumes as of October 2023.</p>
+            </div>
+            <div class="circle"><i class="magnet-target" class="ri-arrow-down-line"></i></div>
+        </div>
+        <div class="secondPage">
+            <div class="secleft">
+                <h1>About</h1>
+                <h1>jkAnime</h1>
+            </div>
+            <div class="secright">
+                <p>Welcome to <a class="magnet-target" href="#home">jkAnime</a>, where the power of Jujutsu Kaisen comes
+                    to life! We're on a mission to uncover the hidden depths of each character's abilities, strengths,
+                    and untold stories.
+                    <br><br>
+                    Our team of devoted fans is dedicated to serving you with character profiles that go beyond the
+                    surface. We're not just fans; we're sorcery enthusiasts, and we're here to bring you the secrets and
+                    skills of the Jujutsu Kaisen universe.
+                    <br><br>
+                    As we explore the world of curses and sorcerers together, we invite you to be part of our vibrant
+                    community. Discover, discuss, and celebrate the extraordinary characters that make Jujutsu Kaisen a
+                    supernatural masterpiece.
+                </p>
+            </div>
+        </div>
+        <div class="thirdPage">
+            <div class="heading">
+                <h1>Characters</h1>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h3>Yuuji Itadori</h3>
+                    <img class="mask-target"
+                        src="https://c4.wallpaperflare.com/wallpaper/472/269/301/jujutsu-kaisen-yuji-itadori-hd-wallpaper-preview.jpg"
+                        alt="Yuuji_Itadori">
+                    <div class="box"></div>
+                </div>
+                <div class="card">
+                    <h3>Megumi Fushiguro</h3>
+                    <img class="mask-target" src="https://images8.alphacoders.com/115/1150694.jpg"
+                        alt="Megumi_Fushiguro">
+                    <div class="box"></div>
+                </div>
+                <div class="card">
+                    <h3>Satoru Gojo</h3>
+                    <img class="mask-target"
+                        src="https://c4.wallpaperflare.com/wallpaper/813/960/923/anime-boys-jujutsu-kaisen-satoru-gojo-anime-food-hd-wallpaper-preview.jpg"
+                        alt="Satoru_Gojo">
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <video src="/videos/Jujutsu Kaisen 4k Season 2 Final Trailer.mp4" autoplay muted loop></video>
+            <div class="footer-text">
+                <h1>jkAnime</h1>
+                <button class="magnet-target" type="button">Hover on me!</button>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="footer-bottom">
+            <p>© 2023 <a class="magnet-target" href="#home">jujutsuKaisen.anime.</a> <br>
+                All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <!--  Gsap is needed for Basic Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Scroll Trigger is needed for Scroll Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+    <script src="script.js"></script>
+</body>
+
+</html>
